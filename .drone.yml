@@ -11,8 +11,8 @@ pipeline:
     image: plugins/docker
     repo: sunjp123/test
     settings:
-        username: sunjp123
-        password: sunjianping88@
+        username: docker_name
+        password: docker_password
     context: ./cicd/
     dockerfile: ./cicd/Dockerfile
     default_tags: true
