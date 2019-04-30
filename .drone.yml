@@ -7,5 +7,5 @@ pipeline:
     images:node
     commands:
         - cd node-drone
-        - npm run dist
+        - npm run start
     
