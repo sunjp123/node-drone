@@ -10,7 +10,9 @@ pipeline:
   image:  # Build image and publish to private registry
     image: plugins/docker
     repo: sunjp123/test
-    secrets: [ docker_name, docker_password ]
+    settings:
+        username: sunjp123
+        password: sunjianping88@
     context: ./cicd/
     dockerfile: ./cicd/Dockerfile
     default_tags: true
