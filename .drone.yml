@@ -17,5 +17,5 @@ pipeline:
     dockerfile: ./cicd/Dockerfile
     default_tags: true
     commands:
-        - docker login -p $DOCKER_PASWORD -u $DOCKER_NAME
+        - docker login -p docker_password -u docker_name
     
