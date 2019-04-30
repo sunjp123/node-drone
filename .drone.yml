@@ -6,6 +6,5 @@ pipeline:
   build:  # Build go app and package source files
     image: node
     commands:
-        - cd node-drone
         - npm run start
     
