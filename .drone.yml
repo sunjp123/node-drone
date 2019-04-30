@@ -13,7 +13,6 @@ pipeline:
     settings:
         username: docker_name
         password: docker_password
-    context: ./cicd/
     dockerfile: ./cicd/Dockerfile
     default_tags: true
     
