@@ -9,7 +9,7 @@ pipeline:
         - npm run start
   image:  # Build image and publish to private registry
     image: plugins/docker
-    repo: sunjp123/test
+    repo: sunjp123/
     settings:
         username: docker_name
         password: docker_password
