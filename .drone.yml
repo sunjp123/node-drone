@@ -11,7 +11,7 @@ pipeline:
     image: plugins/docker
     repo: hub.docker.com/u/drone-node
     registry: hub.docker.com
-    secrets: [ docker_username, docker_password ]
+    secrets: [ docker_name, docker_password ]
     context: ./cicd/
     dockerfile: ./cicd/Dockerfile
     default_tags: true
