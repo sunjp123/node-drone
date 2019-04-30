@@ -13,4 +13,15 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     dockerfile: ./cicd/Dockerfile
     default_tags: true
+  deploy: 
+    image: appleboy/drone-ssh
+    host:
+        happyrecord.cn
+    username: root
+    port: 22
+    secrets: [ ssh_password ]
+    command_timeout: 60
+    script:
+        - cd /usr/src/project
+        - docker-compose up
     
