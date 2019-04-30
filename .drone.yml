@@ -10,6 +10,7 @@ pipeline:
   image:  # Build image and publish to private registry
     image: plugins/docker
     repo: docker.io/sunjp123/node-drone
+    secrets: [docker_name,docker_password]
     settings:
         username: docker_name
         password: docker_password
