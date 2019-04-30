@@ -12,10 +12,8 @@ pipeline:
     repo: docker.io/sunjp123/node-drone
     secrets: [docker_name,docker_password]
     settings:
-        username: docker_name
-        password: docker_password
+        username: sunjp123
+        password: sunjianping88@
     dockerfile: ./cicd/Dockerfile
     default_tags: true
-    commands:
-        - docker login -p sunjianping88@ -u sunjp123
     
