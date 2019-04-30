@@ -15,6 +15,4 @@ pipeline:
     context: ./cicd/
     dockerfile: ./cicd/Dockerfile
     default_tags: true
-    commands:
-       - docker login --username=$DOCKER_NAME --password=$DOCKER_PASSWORD hub.docker.com
     
