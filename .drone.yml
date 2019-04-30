@@ -7,4 +7,12 @@ pipeline:
     image: node
     commands:
         - npm run start
+  image:  # Build image and publish to private registry
+    image: plugins/docker
+    repo: hub.docker.com/u/drone-node
+    registry: hub.docker.com
+    secrets: [ docker_username, docker_password ]
+    context: ./cicd/
+    dockerfile: ./cicd/Dockerfile
+    default_tags: true
     
