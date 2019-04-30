@@ -9,7 +9,7 @@ pipeline:
         - npm run start
   image:  # Build image and publish to private registry
     image: plugins/docker
-    repo: hub.docker.com/r/sunjp123/drone-node
+    repo: sunjp123/drone-node
     registry: hub.docker.com
     secrets: [ docker_name, docker_password ]
     context: ./cicd/
