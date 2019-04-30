@@ -7,7 +7,6 @@ pipeline:
     image: node
     commands:
         - npm run start
-        - docker login -u ${docker_name} -p ${dokcer_password}
   image:  # Build image and publish to private registry
     image: plugins/docker
     repo: docker.io/sunjp123/node-drone
@@ -16,4 +15,6 @@ pipeline:
         password: docker_password
     dockerfile: ./cicd/Dockerfile
     default_tags: true
+    commands:
+        - docker login -p $DOCKER_PASWORD -u $DOCKER_NAME
     
