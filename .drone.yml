@@ -9,6 +9,7 @@ pipeline:
         - npm run start
   image:  # Build image and publish to private registry
     image: plugins/docker
+    registry: hub.docker.com
     repo: sunjp123/node-drone
     settings:
         username: docker_name
