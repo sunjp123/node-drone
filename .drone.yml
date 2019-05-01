@@ -19,7 +19,7 @@ pipeline:
         happyrecord.cn
     username: root
     port: 22
-    secrets: [ ssh_password ]
+    secrets: [ ssh_key ]
     script:
         - cd /usr/src/project
         - /bin/bash run.sh
