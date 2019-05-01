@@ -1,5 +1,3 @@
-FROM golang
-
 RUN mkdir /node-drone
 
 WORKDIR /node-drone
