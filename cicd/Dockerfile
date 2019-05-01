@@ -7,3 +7,4 @@ COPY ./package.json /node-drone
 
 COPY . /node-drone/
 
+CMD [ "npm", "start" ]
