@@ -1,3 +1,5 @@
+FROM sunjp123/node-drone
+
 RUN mkdir /node-drone
 
 WORKDIR /node-drone
