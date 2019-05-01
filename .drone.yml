@@ -13,7 +13,6 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     dockerfile: ./cicd/Dockerfile
     default_tags: true
-    experimental: true
   deploy: 
     image: appleboy/drone-ssh
     host:
