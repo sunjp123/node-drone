@@ -1,4 +1,4 @@
-FROM sunjp123/node-drone
+FROM sunjp123/test
 
 RUN mkdir /node-drone
 
