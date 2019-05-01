@@ -9,6 +9,7 @@ pipeline:
         - npm run start
   publish:  # Build image and publish to private registry
     image: plugins/docker
+    registry: http://registry.happyrecord.cn
     repo: sunjp123/node-drone
     secrets: [ docker_username, docker_password ]
     dockerfile: ./cicd/Dockerfile
