@@ -1,5 +1,5 @@
 
-FROM node
+FROM node:latest
 
 RUN mkdir /node-drone
 
