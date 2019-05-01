@@ -7,7 +7,7 @@ pipeline:
     image: node
     commands:
         - npm run start
-  image:  # Build image and publish to private registry
+  publish:  # Build image and publish to private registry
     image: plugins/docker
     repo: sunjp123/node-drone
     secrets: [ docker_username, docker_password ]
@@ -22,5 +22,5 @@ pipeline:
     secrets: [ ssh_password ]
     script:
         - cd /usr/src/project
-        - docker-compose up
+        - /bin/bash run.sh
     
